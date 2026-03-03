@@ -1,8 +1,8 @@
 # Modelos de Emparejamiento Semántico Proyecto–Política
 
-Este notebook implementa y compara cinco enfoques progresivamente más avanzados para emparejar descripciones de proyectos con un catálogo de políticas públicas utilizando técnicas de NLP basadas en embeddings y LLMs.
+Este notebook implementa y compara cinco enfoques progresivamente más avanzados para emparejar indicadores de producto asignados a la estructura prográmatica de los PATR y los indicadores de productos de la MGA utilizados en la formulación de los Planes de Desarrollo Territorial, utilizando técnicas de NLP basadas en embeddings y LLMs.
 
-El objetivo es asignar, para cada proyecto, las políticas más alineadas conceptualmente.
+El objetivo es asignar, para cada subprograma PATR, los indicadores de producto de los PDT que están más alineadas conceptualmente.
 
 ---
 
@@ -10,8 +10,8 @@ El objetivo es asignar, para cada proyecto, las políticas más alineadas concep
 
 El notebook trabaja con dos bases:
 
-- `df_politicas` → Catálogo de políticas o indicadores
-- `df_proyectos` → Descripciones de proyectos
+- `df_politicas` → Catálogo de la estructura prográmatica PATR
+- `df_proyectos` → Plan operativo de los PDT 
 
 Ambos datasets se cargan desde CSV y contienen campos textuales que serán transformados en embeddings.
 
